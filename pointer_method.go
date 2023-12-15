@@ -4,19 +4,19 @@ import "fmt"
 
 type Man struct {
 	Name string
-	Age  string
+	//Age  string
 }
 
 func (man *Man) Married() {
 	man.Name = "Mr." + man.Name
-	man.Age = "Umur " + man.Age
+	//man.Age = "Umur " + man.Age
 }
 
 func main() {
 
-	syahid := Man{"Syahid", "24"}
+	syahid := Man{"Syahid"}
 
 	syahid.Married()
 
-	fmt.Println(syahid.Name, syahid.Age)
+	fmt.Println(syahid.Name)
 }
